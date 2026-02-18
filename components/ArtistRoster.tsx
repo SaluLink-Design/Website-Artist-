@@ -7,7 +7,7 @@ const ArtistRoster = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center gap-3 mb-6">
           <span className="w-8 h-px bg-gold" />
-          <span className="text-gold text-xs tracking-[0.3em] uppercase">Our Roster</span>
+          <span className="text-white/60 text-xs tracking-[0.3em] uppercase">Our Roster</span>
         </div>
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20">
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white leading-tight max-w-xl">
@@ -50,7 +50,7 @@ const ArtistRoster = () => {
                   {artist.roles.map((role) => (
                     <span
                       key={role}
-                      className="text-[10px] tracking-[0.2em] uppercase border border-gold/30 text-gold/70 px-2.5 py-1"
+                      className="text-[10px] tracking-[0.2em] uppercase border border-gold/40 text-white/70 px-2.5 py-1"
                     >
                       {role}
                     </span>
@@ -62,7 +62,7 @@ const ArtistRoster = () => {
                   {artist.alias}
                 </h3>
                 <p className="text-white/30 text-sm tracking-wider mb-2">{artist.name}</p>
-                <p className="text-gold/60 text-xs tracking-[0.2em] uppercase mb-6">
+                <p className="text-white/50 text-xs tracking-[0.2em] uppercase mb-6">
                   {artist.origin}
                 </p>
 
@@ -104,7 +104,7 @@ const ArtistRoster = () => {
                     {artist.bookingEmail && (
                       <a
                         href={`mailto:${artist.bookingEmail}`}
-                        className="block text-gold/70 text-sm hover:text-gold transition-colors"
+                        className="block text-white/60 text-sm hover:text-white transition-colors"
                       >
                         {artist.bookingEmail}
                       </a>
@@ -112,7 +112,7 @@ const ArtistRoster = () => {
                     {artist.generalEmail && (
                       <a
                         href={`mailto:${artist.generalEmail}`}
-                        className="block text-white/40 text-sm hover:text-gold transition-colors"
+                        className="block text-white/40 text-sm hover:text-white transition-colors"
                       >
                         {artist.generalEmail}
                       </a>
@@ -122,7 +122,7 @@ const ArtistRoster = () => {
                         <a
                           key={phone}
                           href={`tel:${phone.replace(/\s/g, "")}`}
-                          className="text-white/40 text-sm hover:text-gold transition-colors"
+                          className="text-white/40 text-sm hover:text-white transition-colors"
                         >
                           {phone}
                         </a>

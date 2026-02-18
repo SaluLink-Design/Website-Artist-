@@ -9,15 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0a",
+        background: "#000000",
         foreground: "#ffffff",
         gold: {
-          DEFAULT: "#C9A84C",
-          light: "#E2C97E",
-          dark: "#A07830",
+          DEFAULT: "#1A2F70",
+          light: "#2a4499",
+          dark: "#0e1d47",
         },
-        surface: "#111111",
-        border: "#1e1e1e",
+        surface: "#0a0a0a",
+        border: "#1a1a1a",
       },
       fontFamily: {
         display: ["var(--font-playfair)", "Georgia", "serif"],

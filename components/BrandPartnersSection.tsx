@@ -4,7 +4,7 @@ const BrandPartnersSection = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center gap-3 mb-6">
           <span className="w-8 h-px bg-gold" />
-          <span className="text-gold text-xs tracking-[0.3em] uppercase">Partnerships</span>
+          <span className="text-white/60 text-xs tracking-[0.3em] uppercase">Partnerships</span>
         </div>
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20">
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white leading-tight max-w-xl">
@@ -42,7 +42,7 @@ const BrandPartnersSection = () => {
           </div>
           <a
             href="/contact"
-            className="flex-shrink-0 text-xs tracking-[0.15em] uppercase border border-gold text-gold px-8 py-3 hover:bg-gold hover:text-background transition-all duration-200 whitespace-nowrap"
+            className="flex-shrink-0 text-xs tracking-[0.15em] uppercase border border-gold bg-gold text-white px-8 py-3 hover:bg-gold-light transition-all duration-200 whitespace-nowrap"
           >
             Start a Conversation
           </a>

@@ -9,7 +9,7 @@ const CTASection = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center">
         <div className="inline-flex items-center gap-3 mb-8">
           <span className="w-8 h-px bg-gold" />
-          <span className="text-gold text-xs tracking-[0.3em] uppercase">Get In Touch</span>
+          <span className="text-white/60 text-xs tracking-[0.3em] uppercase">Get In Touch</span>
           <span className="w-8 h-px bg-gold" />
         </div>
 
@@ -25,7 +25,7 @@ const CTASection = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/contact"
-            className="w-full sm:w-auto text-sm tracking-[0.15em] uppercase bg-gold text-background px-12 py-4 font-semibold hover:bg-gold-light transition-colors duration-200"
+            className="w-full sm:w-auto text-sm tracking-[0.15em] uppercase bg-gold text-white px-12 py-4 font-semibold hover:bg-gold-light transition-colors duration-200"
           >
             Partner With Us
           </Link>

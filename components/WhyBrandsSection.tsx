@@ -15,7 +15,7 @@ const WhyBrandsSection = () => {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <span className="w-8 h-px bg-gold" />
-              <span className="text-gold text-xs tracking-[0.3em] uppercase">Brand Value</span>
+              <span className="text-white/60 text-xs tracking-[0.3em] uppercase">Brand Value</span>
             </div>
             <h2 className="font-display text-4xl sm:text-5xl font-bold text-white leading-tight mb-14">
               Why Brands Work With Us
@@ -37,14 +37,14 @@ const WhyBrandsSection = () => {
           <div className="relative">
             <div className="border border-border p-10 lg:p-14">
               <div className="absolute -top-px left-10 right-10 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
-              <span className="text-gold/30 font-display text-8xl font-bold leading-none block mb-8">&ldquo;</span>
+              <span className="text-white/15 font-display text-8xl font-bold leading-none block mb-8">&ldquo;</span>
               <p className="font-display text-xl lg:text-2xl text-white leading-relaxed font-medium">
                 We connect brands with culturally relevant artists through strategic,
                 measurable, and impactful partnerships.
               </p>
               <div className="mt-10 pt-8 border-t border-border flex items-center gap-4">
                 <div className="w-8 h-px bg-gold" />
-                <span className="text-gold text-xs tracking-[0.2em] uppercase">Artist Global Connect</span>
+                <span className="text-white/50 text-xs tracking-[0.2em] uppercase">Artist Global Connect</span>
               </div>
             </div>
           </div>

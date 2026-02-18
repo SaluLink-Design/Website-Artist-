@@ -7,11 +7,11 @@ const PositioningSection = () => {
           <div>
             <div className="flex items-center gap-3 mb-8">
               <span className="w-8 h-px bg-gold" />
-              <span className="text-gold text-xs tracking-[0.3em] uppercase">About</span>
+              <span className="text-white/60 text-xs tracking-[0.3em] uppercase">About</span>
             </div>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight">
               More Than Management.{" "}
-              <span className="text-gold">We Build Careers.</span>
+              <span className="text-white">We Build Careers.</span>
             </h2>
 
             {/* Decorative border block */}

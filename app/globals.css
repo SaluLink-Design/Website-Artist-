@@ -12,15 +12,15 @@ html {
 }
 
 body {
-  background-color: #0a0a0a;
+  background-color: #000000;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: #C9A84C;
-  color: #0a0a0a;
+  background-color: #1A2F70;
+  color: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -28,13 +28,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C9A84C40;
+  background: #1A2F7040;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #C9A84C;
+  background: #1A2F70;
 }

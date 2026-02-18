@@ -44,21 +44,21 @@ const Navbar = () => {
             <Link
               key={link.label}
               href={link.href}
-              className="text-xs tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-200"
+              className="text-xs tracking-[0.15em] uppercase text-white/60 hover:text-white transition-colors duration-200"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href="/contact"
-            className="text-xs tracking-[0.15em] uppercase border border-gold text-gold px-5 py-2.5 hover:bg-gold hover:text-background transition-all duration-200"
+            className="text-xs tracking-[0.15em] uppercase border border-gold bg-gold text-white px-5 py-2.5 hover:bg-gold-light transition-all duration-200"
           >
             Partner With Us
           </Link>
         </nav>
 
         <button
-          className="md:hidden text-white/70 hover:text-gold transition-colors"
+          className="md:hidden text-white/70 hover:text-white transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -77,7 +77,7 @@ const Navbar = () => {
               key={link.label}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-xs tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors"
+              className="text-xs tracking-[0.15em] uppercase text-white/60 hover:text-white transition-colors"
             >
               {link.label}
             </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
           <Link
             href="/contact"
             onClick={() => setMenuOpen(false)}
-            className="text-xs tracking-[0.15em] uppercase border border-gold text-gold px-5 py-3 text-center hover:bg-gold hover:text-background transition-all duration-200"
+            className="text-xs tracking-[0.15em] uppercase border border-gold bg-gold text-white px-5 py-3 text-center hover:bg-gold-light transition-all duration-200"
           >
             Partner With Us
           </Link>

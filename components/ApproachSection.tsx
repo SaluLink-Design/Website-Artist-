@@ -25,7 +25,7 @@ const ApproachSection = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center gap-3 mb-6">
           <span className="w-8 h-px bg-gold" />
-          <span className="text-gold text-xs tracking-[0.3em] uppercase">Philosophy</span>
+          <span className="text-white/60 text-xs tracking-[0.3em] uppercase">Philosophy</span>
         </div>
         <h2 className="font-display text-4xl sm:text-5xl font-bold text-white leading-tight mb-20 max-w-xl">
           Our Approach
@@ -38,7 +38,7 @@ const ApproachSection = () => {
               <span className="absolute -top-4 -right-4 font-display text-[120px] font-bold text-white/[0.02] leading-none select-none group-hover:text-white/[0.04] transition-colors duration-500">
                 {pillar.number}
               </span>
-              <span className="text-gold text-xs tracking-[0.3em] font-mono block mb-8">
+              <span className="text-white/40 text-xs tracking-[0.3em] font-mono block mb-8">
                 {pillar.number}
               </span>
               <h3 className="font-display text-2xl font-bold text-white mb-5 leading-snug">

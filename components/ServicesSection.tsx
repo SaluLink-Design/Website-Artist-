@@ -37,7 +37,7 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center gap-3 mb-6">
           <span className="w-8 h-px bg-gold" />
-          <span className="text-gold text-xs tracking-[0.3em] uppercase">What We Do</span>
+          <span className="text-white/60 text-xs tracking-[0.3em] uppercase">What We Do</span>
         </div>
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20">
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white leading-tight max-w-xl">
@@ -55,10 +55,10 @@ const ServicesSection = () => {
               key={service.number}
               className="bg-surface p-10 group hover:bg-background transition-colors duration-300"
             >
-              <span className="text-gold/40 text-xs tracking-[0.3em] font-mono mb-6 block">
+              <span className="text-white/30 text-xs tracking-[0.3em] font-mono mb-6 block">
                 {service.number}
               </span>
-              <h3 className="font-display text-xl font-semibold text-white mb-4 group-hover:text-gold transition-colors duration-300 leading-snug">
+              <h3 className="font-display text-xl font-semibold text-white mb-4 group-hover:text-white transition-colors duration-300 leading-snug">
                 {service.title}
               </h3>
               <p className="text-white/40 text-sm leading-relaxed">{service.description}</p>
@@ -67,7 +67,7 @@ const ServicesSection = () => {
           ))}
           {/* Filler cell to complete grid */}
           <div className="bg-surface hidden lg:flex items-center justify-center p-10">
-            <span className="text-gold/20 font-display text-6xl font-bold tracking-tight">AGC</span>
+            <span className="text-white/10 font-display text-6xl font-bold tracking-tight">AGC</span>
           </div>
         </div>
       </div>

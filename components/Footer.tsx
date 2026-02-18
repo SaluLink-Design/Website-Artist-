@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <span className="w-8 h-8 border border-gold flex items-center justify-center">
-                <span className="text-gold font-display text-xs font-bold tracking-widest">AGC</span>
+                <span className="text-white font-display text-xs font-bold tracking-widest">AGC</span>
               </span>
               <span className="font-display text-sm font-semibold tracking-[0.2em] text-white uppercase">
                 Artist Global Connect
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-xs tracking-[0.2em] uppercase text-gold mb-6">Navigation</h4>
+            <h4 className="text-xs tracking-[0.2em] uppercase text-white/60 mb-6">Navigation</h4>
             <ul className="space-y-4">
               {[
                 { label: "About", href: "/#about" },
@@ -32,7 +32,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-white/50 text-sm hover:text-gold transition-colors tracking-wide"
+                    className="text-white/50 text-sm hover:text-white transition-colors tracking-wide"
                   >
                     {link.label}
                   </Link>
@@ -42,13 +42,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-xs tracking-[0.2em] uppercase text-gold mb-6">Get In Touch</h4>
+            <h4 className="text-xs tracking-[0.2em] uppercase text-white/60 mb-6">Get In Touch</h4>
             <p className="text-white/50 text-sm leading-relaxed mb-4">
               Ready to explore a partnership or work with our artists?
             </p>
             <Link
               href="/contact"
-              className="inline-block text-xs tracking-[0.15em] uppercase border border-gold text-gold px-5 py-2.5 hover:bg-gold hover:text-background transition-all duration-200"
+              className="inline-block text-xs tracking-[0.15em] uppercase border border-gold bg-gold text-white px-5 py-2.5 hover:bg-gold-light transition-all duration-200"
             >
               Start a Conversation
             </Link>
