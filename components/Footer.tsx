@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -55,10 +56,53 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/25 text-xs tracking-wider">
-            © {new Date().getFullYear()} Artist Global Connect. All rights reserved.
-          </p>
+        {/* Direct Contact Section */}
+        <div className="border-t border-border pt-12 mb-12">
+          <h3 className="text-white text-xs tracking-[0.25em] uppercase mb-8">Direct Contact</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div>
+              <p className="text-white/50 text-xs tracking-[0.15em] uppercase mb-2">Artist Bookings — EeQue</p>
+              <a
+                href="mailto:eeQuebookings@gmail.com"
+                className="text-white text-sm hover:text-gold transition-colors tracking-wide"
+              >
+                eeQuebookings@gmail.com
+              </a>
+            </div>
+            <div>
+              <p className="text-white/50 text-xs tracking-[0.15em] uppercase mb-2">Artist Bookings — Masterpiece YVK</p>
+              <a
+                href="mailto:bookings@yvkrecords.co.za"
+                className="text-white text-sm hover:text-gold transition-colors tracking-wide"
+              >
+                bookings@yvkrecords.co.za
+              </a>
+            </div>
+            <div>
+              <p className="text-white/50 text-xs tracking-[0.15em] uppercase mb-2">General Enquiries</p>
+              <a
+                href="mailto:info@yvkrecords.co.za"
+                className="text-white text-sm hover:text-gold transition-colors tracking-wide"
+              >
+                info@yvkrecords.co.za
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-4">
+            <Image
+              src="/agc-logo.png"
+              alt="Artist Global Connect"
+              width={48}
+              height={48}
+              className="object-contain opacity-80"
+            />
+            <p className="text-white/25 text-xs tracking-wider">
+              © {new Date().getFullYear()} Artist Global Connect. All rights reserved.
+            </p>
+          </div>
           <p className="text-white/25 text-xs tracking-wider">
             Amapiano Artist Management · Brand Partnerships · Career Building
           </p>
