@@ -12,7 +12,7 @@ export interface Artist {
   generalEmail?: string;
   image: string;
   imageCasual?: string;
-  mediaKit?: string;
+  mediaKitPages?: string[];
 }
 
 export const artists: Artist[] = [
@@ -42,7 +42,7 @@ export const artists: Artist[] = [
     bookingPhone: ["+27 71 544 3654", "+27 67 727 3004"],
     image: "/artists/eeque/photo-main.jpg",
     imageCasual: "/artists/eeque/photo-casual.jpg",
-    mediaKit: "/media-kits/eeque-epk.pdf",
+    mediaKitPages: Array.from({ length: 10 }, (_, i) => `/media-kits/eeque/page-${i + 1}.jpg`),
   },
   {
     id: "masterpiece-yvk",
@@ -70,7 +70,7 @@ export const artists: Artist[] = [
     generalEmail: "info@yvkrecords.co.za",
     image: "/artists/masterpiece-yvk/photo-main.jpg",
     imageCasual: "/artists/masterpiece-yvk/photo-fun.jpg",
-    mediaKit: "/media-kits/masterpiece-yvk-epk.pdf",
+    mediaKitPages: Array.from({ length: 6 }, (_, i) => `/media-kits/masterpiece-yvk/page-${i + 1}.jpg`),
   },
   {
     id: "chcco",
@@ -90,7 +90,7 @@ export const artists: Artist[] = [
     bookingEmail: "chiccoalot@gmail.com",
     bookingPhone: ["+27 62 155 6038"],
     image: "/artists/chcco/photo-main.jpg",
-    mediaKit: "/media-kits/chcco-media-kit.pdf",
+    mediaKitPages: Array.from({ length: 7 }, (_, i) => `/media-kits/chcco/page-${i + 1}.jpg`),
   },
   {
     id: "al-xapo",
@@ -116,7 +116,7 @@ export const artists: Artist[] = [
     bookingPhone: ["074 731 9913"],
     image: "/artists/al-xapo/photo-main.jpg",
     imageCasual: "/artists/al-xapo/photo-casual.jpg",
-    mediaKit: "/media-kits/al-xapo-epk.pdf",
+    mediaKitPages: Array.from({ length: 10 }, (_, i) => `/media-kits/al-xapo/page-${i + 1}.jpg`),
   },
   {
     id: "chley",
@@ -137,6 +137,6 @@ export const artists: Artist[] = [
     bookingPhone: ["+27 79 981 1025", "+27 74 235 3508"],
     image: "/artists/chley/photo-main.png",
     imageCasual: "/artists/chley/photo-casual.png",
-    mediaKit: "/media-kits/chley-press-kit.pdf",
+    mediaKitPages: Array.from({ length: 6 }, (_, i) => `/media-kits/chley/page-${i + 1}.jpg`),
   },
 ];

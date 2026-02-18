@@ -31,10 +31,10 @@ const ArtistRoster = () => {
             <div key={artist.id} className="group border border-border hover:border-gold/40 transition-colors duration-300">
               {/* Artist photo — clickable if mediaKit exists */}
               <button
-                onClick={() => artist.mediaKit && setSelectedArtist(artist)}
-                className={`relative overflow-hidden h-[420px] lg:h-[500px] w-full block${artist.mediaKit ? " cursor-pointer" : " cursor-default"}`}
-                tabIndex={artist.mediaKit ? 0 : -1}
-                aria-label={artist.mediaKit ? `View ${artist.alias} media kit` : undefined}
+                onClick={() => artist.mediaKitPages && setSelectedArtist(artist)}
+                className={`relative overflow-hidden h-[420px] lg:h-[500px] w-full block${artist.mediaKitPages ? " cursor-pointer" : " cursor-default"}`}
+                tabIndex={artist.mediaKitPages ? 0 : -1}
+                aria-label={artist.mediaKitPages ? `View ${artist.alias} media kit` : undefined}
               >
                 <Image
                   src={artist.image}
@@ -53,7 +53,7 @@ const ArtistRoster = () => {
                 {/* Gold top border on hover */}
                 <div className="absolute top-0 left-0 right-0 h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 {/* Hover prompt — slides up on card hover */}
-                {artist.mediaKit && (
+                {artist.mediaKitPages && (
                   <div className="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out pointer-events-none">
                     <div className="bg-black/80 backdrop-blur-sm border-t border-gold/30 px-6 py-4 flex items-center justify-between">
                       <span className="text-white text-xs tracking-[0.25em] uppercase">
@@ -85,7 +85,7 @@ const ArtistRoster = () => {
                 </div>
 
                 {/* Name — clickable if mediaKit exists */}
-                {artist.mediaKit ? (
+                {artist.mediaKitPages ? (
                   <button
                     onClick={() => setSelectedArtist(artist)}
                     className="text-left group/name block mb-1"
@@ -105,7 +105,7 @@ const ArtistRoster = () => {
                 </p>
 
                 {/* View media kit link */}
-                {artist.mediaKit && (
+                {artist.mediaKitPages && (
                   <button
                     onClick={() => setSelectedArtist(artist)}
                     className="flex items-center gap-2 text-gold/70 hover:text-gold text-[10px] tracking-[0.25em] uppercase transition-colors duration-200 mb-6"
@@ -115,7 +115,7 @@ const ArtistRoster = () => {
                   </button>
                 )}
 
-                {!artist.mediaKit && <div className="mb-6" />}
+                {!artist.mediaKitPages && <div className="mb-6" />}
 
                 {/* Bio */}
                 <p className="text-white/50 text-sm leading-relaxed mb-8">{artist.bio}</p>
